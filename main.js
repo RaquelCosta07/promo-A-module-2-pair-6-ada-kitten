@@ -54,3 +54,17 @@ const kittens = document.querySelector(".js-list");
 
         kittens.innerHTML = kittenOne + kittenTwo + kittenThree;
 
+    const menuAdd = document.querySelector('.js-btn-add');
+
+    menuAdd.addEventListener("click", () => {
+      const formSection = document.querySelector('.new-form');
+      formSection.classList.remove('collapsed');
+    });
+
+    const buttonCancel = document.querySelector('.js-btn-cancel');
+
+    buttonCancel.addEventListener("Click", () => {
+      const formSection = document.querySelector('.js-btn-cancel');
+      formSection.classList.add('collapsed');
+    });
+
