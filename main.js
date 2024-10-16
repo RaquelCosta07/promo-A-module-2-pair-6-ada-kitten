@@ -63,8 +63,9 @@ const kittens = document.querySelector(".js-list");
 
     const buttonCancel = document.querySelector('.js-btn-cancel');
 
-    buttonCancel.addEventListener("Click", () => {
-      const formSection = document.querySelector('.js-btn-cancel');
+    buttonCancel.addEventListener("click", () => {
+      const formSection = document.querySelector('.new-form');
       formSection.classList.add('collapsed');
+      // console.log("clickcancel");
     });
 
