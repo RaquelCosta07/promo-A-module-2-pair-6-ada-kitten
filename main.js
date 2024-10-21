@@ -122,6 +122,7 @@ kittenCard1.classList.add("collapsed");
 kittenCard2.classList.add("collapsed");
 kittenCard3.classList.add("collapsed");
 
+// añadiendo el toLowerCase hace que todo sea en minúscula 
 if(kittenDesc1.toLowerCase().includes(descriptionValue)) {
   kittenCard1.classList.remove("collapsed");
 }
