@@ -109,24 +109,33 @@ newForm.addEventListener("click", showNewCatForm);
 
 const buttonSearch = document.querySelector('.js-button-search');
 const input_search_desc = document.querySelector('.js-desc');
+const kittenCard1 = document.querySelector(".js-card-anastacio");
+const kittenCard2 = document.querySelector(".js-card-fiona");
+const kittenCard3 = document.querySelector(".js-card-cielo");
 
 const handleClick = (event) => {
   event.preventDefault();
 const descrSearchText = input_search_desc.value; 
-console.log("Ha hecho click");
+
+// ocultar gatitos al darle a buscar
+kittenCard1.classList.add("collapsed");
+kittenCard2.classList.add("collapsed");
+kittenCard3.classList.add("collapsed");
+
+if(kittenDesc1.includes(descriptionValue)) {
+  kittenCard1.classList.remove("collapsed");
+}
+
+if(kittenDesc2.includes(descriptionValue)) {
+  kittenCard2.classList.remove("collapsed");
+}
+
+if(kittenDesc3.includes(descriptionValue)) {
+  kittenCard3.classList.remove("collapsed");
+}
+
 };
 
-const filterKitten = (event) => {
-  if (kittenDesc1.includes(descrSearchText)) {
-    listElement.innerHTML += kittenOne;
-  }
-  if (kittenDesc2.includes(descrSearchText)) {
-    listElement.innerHTML += kittenTwo;
-  }
-  if (kittenDesc3.includes(descrSearchText)) {
-    listElement.innerHTML += kittenThree;
-  }
-};
- 
+
 buttonSearch.addEventListener('click', handleClick);
 
