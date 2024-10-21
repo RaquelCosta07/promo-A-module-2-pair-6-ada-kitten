@@ -122,15 +122,15 @@ kittenCard1.classList.add("collapsed");
 kittenCard2.classList.add("collapsed");
 kittenCard3.classList.add("collapsed");
 
-if(kittenDesc1.includes(descriptionValue)) {
+if(kittenDesc1.toLowerCase().includes(descriptionValue)) {
   kittenCard1.classList.remove("collapsed");
 }
 
-if(kittenDesc2.includes(descriptionValue)) {
+if(kittenDesc2.toLowerCase().includes(descriptionValue)) {
   kittenCard2.classList.remove("collapsed");
 }
 
-if(kittenDesc3.includes(descriptionValue)) {
+if(kittenDesc3.toLowerCase().includes(descriptionValue)) {
   kittenCard3.classList.remove("collapsed");
 }
 
